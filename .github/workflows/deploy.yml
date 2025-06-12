@@ -46,6 +46,7 @@ jobs:
           > dist/.nojekyll
 
       - name: 上传 Pages 工件
+        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
